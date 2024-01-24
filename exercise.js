@@ -14,12 +14,15 @@ if (CalcAsk === "addition") {
 }
 
 CalcAsk = prompt("What Numbers do you want to add?");
-
+let output = 0;
 CalcAsk = CalcAsk.split(' ');
+let CalcAsk2 = CalcAsk.map(Number);
 
-for (let index = 0; index < CalcAsk.length; index++) {
+console.log(CalcAsk2);
+
+for (let i = 0; i < CalcAsk2.length; i++) {
     if (calcset === 0) {
-        
+        output = CalcAsk2[i]+CalcAsk2[i-i];
     } else if (calcset === 1) {
     
     } else if (calcset === 2) {
@@ -28,4 +31,6 @@ for (let index = 0; index < CalcAsk.length; index++) {
     
     }
 }
+
+console.log(output);
 
