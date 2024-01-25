@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="exercise.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Michael's Awesome Calculator</h1>
+    <h3>Click a button to calculate 2 numbers</h3>
+    <form class="math">
+    <input type="button" value="Addition" id="addButton" onclick="add()">
+    <input type="button" value="Subtract" id="subButton" onclick="sub()">
+    <input type="button" value="Multiply" id="multiButton" onclick="mult()">
+    <input type="button" value="Division" id="divButton" onclick="division()">
+    <input type="button" value="Modulo" id="modButton" onclick="mod()">    
+    <input type="button" value="Exponential" id="exButton" onclick="exponents()">    
+
+</form>
+<h3>Output will appear below here:</h3>
+<h3 id="outputhtml"></h3>
+
 </body>
 </html>
