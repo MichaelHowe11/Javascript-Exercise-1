@@ -1,3 +1,5 @@
+// Functions make me crazy
+
 function add() {
     CalcAsk = prompt("Input two numbers you want to add and seperate them by a space.");
     CalcAsk = CalcAsk.split(' ');
@@ -7,8 +9,12 @@ function add() {
     for (let i = 0; i < CalcAsk.length; i++) {
             output = CalcAsk[i-i]+CalcAsk[i];
     }
-    console.log(output);
-    document.getElementById("outputhtml").innerHTML = output;
+    if (isNaN(parseFloat(CalcAsk))) {
+        document.getElementById("outputhtml").innerHTML = "You inputted an invalid equation";
+        } else {
+        document.getElementById("outputhtml").innerHTML = output;
+        }
+        console.log(output);
 }
 function sub() {
     CalcAsk = prompt("Input two numbers you want to subtract and seperate them by a space.");
@@ -17,7 +23,7 @@ function sub() {
     for (let i = 0; i < CalcAsk.length; i++) {
             output = CalcAsk[i-i]-CalcAsk[i];
     }
-    if (isNaN(CalcAsk)) {
+    if (isNaN(parseFloat(CalcAsk))) {
     document.getElementById("outputhtml").innerHTML = "You inputted an invalid equation";
     } else {
     document.getElementById("outputhtml").innerHTML = output;
@@ -31,9 +37,12 @@ function mult() {
     for (let i = 0; i < CalcAsk.length; i++) {
             output = CalcAsk[i-i]*CalcAsk[i];
     }
-    console.log(output);
-    document.getElementById("outputhtml").innerHTML = output;
-
+    if (isNaN(parseFloat(CalcAsk))) {
+        document.getElementById("outputhtml").innerHTML = "You inputted an invalid equation";
+        } else {
+        document.getElementById("outputhtml").innerHTML = output;
+        }
+        console.log(output);
 }
 function division() {
     CalcAsk = prompt("Input two numbers you want to divide and seperate them by a space.");
@@ -42,8 +51,12 @@ function division() {
     for (let i = 0; i < CalcAsk.length; i++) {
             output = CalcAsk[i-i]/CalcAsk[i];
     }
-    console.log(output);
-    document.getElementById("outputhtml").innerHTML = output;
+    if (isNaN(parseFloat(CalcAsk))) {
+        document.getElementById("outputhtml").innerHTML = "You inputted an invalid equation";
+        } else {
+        document.getElementById("outputhtml").innerHTML = output;
+        }
+        console.log(output);
 }
 function mod() {
     CalcAsk = prompt("Input two numbers you want to modulo and seperate them by a space.");
@@ -52,8 +65,12 @@ function mod() {
     for (let i = 0; i < CalcAsk.length; i++) {
             output = CalcAsk[i-i]%CalcAsk[i];
     }
-    console.log(output);
-    document.getElementById("outputhtml").innerHTML = output;
+    if (isNaN(parseFloat(CalcAsk))) {
+        document.getElementById("outputhtml").innerHTML = "You inputted an invalid equation";
+        } else {
+        document.getElementById("outputhtml").innerHTML = output;
+        }
+        console.log(output);
 }
 function exponents() {
     CalcAsk = prompt("Input two numbers you want to exponent and seperate them by a space.");
@@ -62,6 +79,10 @@ function exponents() {
     for (let i = 0; i < CalcAsk.length; i++) {
             output = CalcAsk[i-i]**CalcAsk[i];
     }
-    console.log(output);
-    document.getElementById("outputhtml").innerHTML = output;
+    if (isNaN(parseFloat(CalcAsk))) {
+        document.getElementById("outputhtml").innerHTML = "You inputted an invalid equation";
+        } else {
+        document.getElementById("outputhtml").innerHTML = output;
+        }
+        console.log(output);
 }
